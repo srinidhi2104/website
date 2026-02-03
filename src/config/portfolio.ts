@@ -7,7 +7,7 @@ const siteConfig = {
   personal: {
     name: 'Srinidhi Susarla',
     title: 'Economics & Data Science Undergraduate | Behavioral Economics Researcher',
-    image: getAsset('images/photo.png'), // Replace with your profile image
+    image: getAsset('images/profile.png'), // Replace with your profile image
     description:
       'Economics undergraduate with a strong interest in behavioral economics, context architecture, and research-driven strategy. Currently pursuing Bachelor of Science in Economics with Data Science at CHRIST University, Bengaluru.\n' +
       '\n' +

@@ -6,27 +6,31 @@ export const getAsset = (path: string) => {
 
 const siteConfig = {
   personal: {
-    name: 'Put your name inside the quote',
-    title: 'Your Title | Your Role',
-    image: getAsset('images/profile.png'), // Customize or replace with your profile image
+    name: 'Srinidhi Susarla',
+    title: 'Economics & Data Science Undergraduate',
+    image: getAsset('images/profile.png'), // replace with your photo file
     description:
-      'Write a short bio here describing your background and focus. Keep it to 2–4 sentences.\n' +
+      'Economics undergraduate with a strong interest in behavioural economics, context architecture, and research-driven strategy.\n' +
       '\n' +
-      'Mention your institution or company, areas of interest, and what you teach or build.\n' +
+      'Trained in data analysis and visual communication, with experience in primary research, survey design, and structured documentation.\n' +
       '\n' +
-      'Summarize your education or certifications briefly and highlight your practical work.\n' +
-      '\n' +
-      'Optional: Add notable books, workshops, or training you deliver.',
-    tagline: 'Add a concise personal tagline here.',
-    location: 'Your City, Country',
+      'Curious about how economics, resources, and human behaviour interact to shape decisions, products, and institutions.',
+    tagline: 'Behavioural Economics • Data Analysis • Research',
+    location: 'Bengaluru, Karnataka, India',
   },
 
   seo: {
-    title: 'Your Name – Your Title',
-    description: "Portfolio website showcasing your education, research, projects, and experience.",
+    title: 'Srinidhi Susarla – Economics & Data Science',
+    description:
+      'Portfolio of Srinidhi Susarla showcasing education, research interests, projects, and academic experience in economics and data science.',
   },
 
-  animatedText: ['Your Role', 'Your Focus', 'Your Interest', 'Builder'],
+  animatedText: [
+    'Economics Undergraduate',
+    'Behavioural Economics',
+    'Data Analysis',
+    'Research & Strategy',
+  ],
 
   navigation: [
     { name: 'Home', url: '/' },
@@ -39,120 +43,125 @@ const siteConfig = {
     { name: 'Contact', url: '/contact' },
   ],
 
-  // Static blog entries. Use getAsset so the URL respects NEXT_PUBLIC_BASE_PATH / next.config.basePath
-  // Add more entries here as you add more static HTML blog files under public/static_page/
   blogs: [
     {
-      title: 'Your Blog Title',
-      url: getAsset('static_page/project_management_blog.html'), // Replace with your static HTML page
+      title: 'Project Management & Research Reflections',
+      url: getAsset('static_page/project_management_blog.html'),
     },
   ],
-
 
   education: [
     {
-      institution: 'Your Institution',
-      degree: 'Your Degree',
-      year: 'YYYY–YYYY',
-      image: getAsset('images/education/placeholder.png'),
-      description: ['Brief description of your focus or thesis'],
-    },
-    {
-      institution: 'Another Institution',
-      degree: 'Another Degree or Certificate',
-      year: 'YYYY–YYYY',
-      image: getAsset('images/education/placeholder.png'),
-      description: ['Key topics or skills learned'],
-    },
-  ],
-
-// ✅ Unified MOOC + Certifications Section
-  certifications: [
-    {
-      title: 'Your Certificate or Specialization',
-      specialization: true,
-      file: getAsset('images/education/Certifications/download.svg'),
-      certificates: [
-        { name: 'Course 1', file: getAsset('images/education/Certifications/download.svg') },
-        { name: 'Course 2', file: getAsset('images/education/Certifications/download.svg') },
+      institution: 'CHRIST (Deemed to be University), Bannerghatta Road Campus',
+      degree: 'B.Sc. Economics with Data Science',
+      year: '2022 – 2025',
+      image: getAsset('images/education/christ_university.png'),
+      description: [
+        'Focus on behavioural economics, data analysis, and applied research',
       ],
     },
     {
-      title: 'Another Certificate',
-      file: getAsset('images/education/Certifications/download.svg'),
+      institution: 'Hill Top School, Jamshedpur',
+      degree: 'Class XII (Higher Secondary)',
+      year: '2021 – 2022',
+      image: getAsset('images/education/hilltop_school.png'),
+      description: ['93.25% – 5th Rank in batch'],
+    },
+    {
+      institution: 'Hill Top School, Jamshedpur',
+      degree: 'Class X (Secondary)',
+      year: '2019 – 2020',
+      image: getAsset('images/education/hilltop_school.png'),
+      description: ['90.8%'],
     },
   ],
 
+  certifications: [
+    {
+      title: 'Data Analysis & Visual Communication',
+      specialization: true,
+      file: getAsset('images/education/Certifications/download.svg'),
+      certificates: [
+        { name: 'Advanced Excel', file: getAsset('images/education/Certifications/download.svg') },
+        { name: 'Python (Basic)', file: getAsset('images/education/Certifications/download.svg') },
+        { name: 'Java (Basic)', file: getAsset('images/education/Certifications/download.svg') },
+        { name: 'Canva for Visual Communication', file: getAsset('images/education/Certifications/download.svg') },
+      ],
+    },
+  ],
 
-
-  // ✅ Experience section updated
   experience: [
     {
-      title: 'Your Role',
+      title: 'Graphic Designer',
       cardImage: getAsset('images/experience/placeholder.png'),
-      place: 'Your Organization',
-      time: '(MMM YYYY – Present)',
-      desp: ['Brief responsibility 1', 'Brief responsibility 2'],
+      place: 'Equinomica – Department Newsletter',
+      time: '(June 2025 – Present)',
+      desp: [
+        'Designed visual layouts to improve clarity, readability, and academic storytelling',
+        'Converted written content into structured visual narratives to enhance engagement',
+      ],
     },
     {
-      title: 'Previous Role',
+      title: 'Documentation Team Member',
       cardImage: getAsset('images/experience/placeholder.png'),
-      place: 'Previous Organization',
-      time: '(MMM YYYY – MMM YYYY)',
-      desp: ['Key contribution 1', 'Key contribution 2'],
+      place: 'Alumni Relations Cell',
+      time: '(Feb 2021 – Dec 2022)',
+      desp: [
+        'Maintained structured records, reports, and institutional documentation',
+        'Developed organisational precision and formal communication skills',
+      ],
     },
   ],
 
-
-  // ✅ Projects section updated
   projects: [
     {
-      title: 'Project Title 1',
+      title: 'Waste Collection Systems in India',
       cardImage: getAsset('images/project/placeholder.png'),
-      description: 'Short description of your project and what it does...',
-      Githublink: 'https://github.com/your-username/your-project',
+      description:
+        'Data analysis project examining efficiency and behavioural patterns in waste collection systems across Indian cities.',
+      Githublink: '',
     },
     {
-      title: 'Project Title 2',
+      title: 'Education Outcomes & Access in India',
       cardImage: getAsset('images/project/placeholder.png'),
-      description: 'Another project summary...',
-      Githublink: 'https://github.com/your-username/another-project',
+      description:
+        'Analytical study exploring educational access, outcomes, and socio-economic factors using structured datasets.',
+      Githublink: '',
+    },
+    {
+      title: 'Menstrual Products Consumer Survey',
+      cardImage: getAsset('images/project/placeholder.png'),
+      description:
+        'Primary survey analysing consumer choice, bounded rationality, and behavioural influences in menstrual product adoption.',
+      Githublink: '',
     },
   ],
-
 
   research: [
     {
-      title: 'Your Paper or Research Title',
-      authors: 'Your Name, Collaborator Name',
-      conferences: 'Conference or Journal, Publisher',
+      title: 'Behavioural Drivers of Consumer Choice in Essential Products',
+      authors: 'Srinidhi Susarla',
+      conferences: 'Undergraduate Research Project',
       researchYr: 2024,
-  image: getAsset('images/research/placeholder.png'),
+      image: getAsset('images/research/placeholder.png'),
       citation: {
         vancouver:
-          'Author A, Author B. Title of the work. Venue, Year. DOI/URL.',
+          'Susarla S. Behavioural drivers of consumer choice in essential products. Undergraduate Research Project, 2024.',
       },
       abstract:
-        'One or two sentences summarizing the contribution...',
-      link: 'https://example.com/your-publication',
+        'An exploratory study examining how bounded rationality and contextual factors influence consumer decisions in essential goods.',
+      link: '',
     },
   ],
 
-  books: [
-    {
-      title: 'Your Book Title',
-      description: 'Short description of your book or resource.',
-      image: getAsset('images/book_cover_placeholder.png'),
-      link: 'https://example.com/your-book',
-    },
-  ],
+  books: [],
 
   contact: {
-    email: 'your.email@example.com',
-    linkedin: 'https://www.linkedin.com/in/your-linkedin/',
-    github: 'https://github.com/your-username',
-    googleScholar: 'https://scholar.google.com/citations?user=YOURID',
-    orcid: 'https://orcid.org/0000-0000-0000-0000',
+    email: 'srinidhisusarla2104@gmail.com',
+    linkedin: 'https://www.linkedin.com/in/srinidhi-susarla-b82187212/',
+    github: '',
+    googleScholar: '',
+    orcid: '',
   },
 };
 
